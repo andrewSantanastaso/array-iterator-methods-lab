@@ -43,3 +43,28 @@ const comments = [
     { text: 'Nice Nice Nice!', id: 542328 }
 ];
 // Exercises
+
+// Array.prototype.filter()
+
+// 1. Filter the array of inventors into a new array containing only the inventors born in the 1500's.
+
+// - You have an array of inventors, each with a birth year listed by the property 'year'.
+// - Use the Array.prototype.filter() method to create a new array.
+// - The new array, 'veryOldInventors', should only include inventors born between the years 1500 and 1599.
+
+let veryOldInventors = []
+
+// Enter your solution code here:
+
+veryOldInventors = inventors.filter((inventor) => {
+    return (inventor.year >= 1500 && inventor.year <= 1599)
+})
+
+// Check your return value:
+console.log('Exercise 1 My Result: ', veryOldInventors)
+console.log('Exercise 1 Correct Result: ',
+    [
+        { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
+        { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 }
+    ]
+)
